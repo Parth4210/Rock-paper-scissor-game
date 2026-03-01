@@ -1,12 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor game</title>
-    <script src="./index.js"></script>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Rock Paper Scissors</h1>
+        <p class="subtitle">Select an option to begin playing</p>
+      </header>
+      <div class="game-board">
+        <button class="btn" id="rock">
+          <span class="icon">🪨</span>
+          <span class="label">Rock</span>
+        </button>
+        <button class="btn" id="paper">
+          <span class="icon">📄</span>
+          <span class="label">Paper</span>
+        </button>
+        <button class="btn" id="scissors">
+          <span class="icon">✂️</span>
+          <span class="label">Scissors</span>
+        </button>
+      </div>
+      <div class="status-panel">
+        <div class="score-board">
+          <div class="score-box">
+            <span class="score-label">Player</span>
+            <span class="score-number" id="player-score">0</span>
+          </div>
+          <div class="score-separator">:</div>
+          <div class="score-box">
+            <span class="score-label">Computer</span>
+            <span class="score-number" id="computer-score">0</span>
+          </div>
+        </div>
+        <div class="result" id="round-result">Make your move!</div>
+      </div>
+    </div>
+  </body>
 </html>
